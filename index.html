@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Kids Who Code</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+	<header>
+		<div class="navbar-static-top navbar-inverse" id="home">
+			<div class="container">
+				<div class="navbar-brand">
+					Kids Who Code
+				</div>
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					Menu
+				</button>
+				<div class="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html" target="_blank">About Us</a></li>
+						<li><a href="classes.html" target="_blank">Classes</a>
+							<ul class="row">
+								<li><a href="class1.html" target="_blank">Class1</a></li>
+								<li><a href="class2.html" target="_blank">Class2</a></li>
+								<li><a href="class3.html" target="_blank">Class3</a></li>
+							</ul >
+						</li>
+							
+						<li><a href="contact.html" target="_blank">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="jumbotron">
+		</div>
+		
+		<div class="alt1 padding" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<!-- <h2 class="text-center"></h2> -->
+					<div class="card">
+					  <img src="level1.png" alt="Avatar" style="width:100%">
+					  <h3>Elementry level</h3>
+					  <p>Learn the fundamentals of coding, tackle design challenges and work within a development team to design and build a working prototype!</p>
+					  
+					</div>
+					<!-- <p class="text-justify">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p> -->
+					<a href="class1.html" class="btn btn-default">Tell me more..</a>
+				</div>
+				<div class="col-md-4">
+					<!-- <h2 class="text-center">Middle level</h2> -->
+					<div class="card">
+					  <img src="level2.png" alt="Avatar" style="width:100%">
+					  <h3>Middle level</h3>
+					  <p>Learn the ropes of video game making and follow the same processes used in professional studios.</p>
+					  
+					</div>
+					<!-- <p class="text-justify">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p> -->
+					 <a href="class2.html" class="btn btn-default">Tell me more..</a> 
+				</div>
+				<div class="col-md-4">
+					<!-- <h2 class="text-center">Advanced level</h2> -->
+					<div class="card">
+					  <img src="level3.png" alt="Avatar" style="width:100%">
+					  <h3>Advanced level</h3>
+					  <p>Learn advanced programming langauges like C/C++, Java,.. and apply them to the real world applications.</p>
+					</div>
+					<!-- <p class="text-justify">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p> -->
+					<a href="class3.html" class="btn btn-default">Tell me more..</a>
+				</div>
+			
+			</div>
+		</div>	
+		</div>
+	
+	
+		<div class="container">
+			<p><a href="contact.html" target="_blank" class="btn btn-primary btn-lg">Register Now!</a></p>
+		</div>
+	</main>
+		<div class="alt2">
+			<div class="container">
+				<footer>
+					&copy; Copyright Tasniem Sharaf, 2019 | <a href="#" target="_blank">terms of service</a> | <a href="#" target="_blank">privacy policy</a>
+
+				</footer>
+			</div>
+		</div>
+	
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script>
+	$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+	</script>
+	</body>
+</html>
